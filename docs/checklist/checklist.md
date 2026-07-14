@@ -10,147 +10,147 @@
     </tr>
     <tr>
       <td align="center">1.1</td>
-      <td>Получение списка компаний без query-параметров</td>
+      <td>Без query-параметров</td>
       <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.2</td>
-        <td>Фильтрация списка компаний по статусу <code>ACTIVE</code></td>
+        <td>status = ACTIVE</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.3</td>
-        <td>Фильтрация списка компаний по статусу <code>CLOSED</code></td>
+        <td>status = CLOSED</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.4</td>
-        <td>Фильтрация списка компаний по статусу <code>BANKRUPT</code></td>
+        <td>status = BANKRUPT</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.5</td>
-        <td>Проверка обработки недопустимого значения query-параметра <code>status</code> при получении списка компаний</td>
+        <td>status = недопустимое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.6</td>
-        <td>Получение списка компаний с корректным значением query-параметра <code>limit</code></td>
+        <td>limit = корректное значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.7</td>
-        <td>Получение списка компаний с минимально допустимым значением query-параметра <code>limit</code></td>
+        <td>limit = минимально допустимое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.8</td>
-        <td>Проверка обработки значения <code>limit = 0</code> при получении списка компаний</td>
+        <td>limit = 0</td>
         <td align="center">Fail</td>
     </tr>
     <tr>
         <td align="center">1.9</td>
-        <td>Проверка обработки отрицательного числового значения query-параметра <code>limit</code> при получении списка компаний</td>
+        <td>limit = отрицательное число</td>
         <td align="center">Fail</td>
     </tr>
     <tr>
         <td align="center">1.10</td>
-        <td>Получение списка компаний с корректным значением query-параметра <code>offset</code></td>
+        <td>offset = корректное значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.11</td>
-        <td>Проверка обработки отрицательного числового значения query-параметра <code>offset</code> при получении списка компаний</td>
+        <td>offset = отрицательное число</td>
         <td align="center">Needs clarification</td>
     </tr>
     <tr>
         <td align="center">1.12</td>
-        <td>Получение списка компаний при значении <code>offset</code>, равном или превышающем <code>total</code></td>
+        <td>offset ≥ total</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.13</td>
-        <td>Проверка фильтрации списка компаний по значению <code>status</code> в нижнем регистре</td>
+        <td>status в нижнем регистре</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.14</td>
-        <td>Проверка обработки числового значения query-параметра <code>status</code> при получении списка компаний</td>
+        <td>status = числовое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.15</td>
-        <td>Проверка обработки нескольких значений query-параметра <code>status</code> при получении списка компаний</td>
+        <td>status = несколько значений</td>
         <td align="center">Needs clarification</td>
     </tr>
     <tr>
         <td align="center">1.16</td>
-        <td>Проверка обработки пустого значения query-параметра <code>status</code> при получении списка компаний</td>
+        <td>status = пустое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.17</td>
-        <td>Проверка обработки специального символа в query-параметре <code>status</code> при получении списка компаний</td>
+        <td>status = спецсимвол</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.18</td>
-        <td>Проверка обработки SQL-like значения в query-параметре <code>status</code> при получении списка компаний</td>
+        <td>status = SQL-like значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.19</td>
-        <td>Проверка обработки строкового значения query-параметра <code>limit</code> при получении списка компаний</td>
+        <td>limit = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.20</td>
-        <td>Проверка обработки пустого значения query-параметра <code>limit</code> при получении списка компаний</td>
+        <td>limit = пустое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.21</td>
-        <td>Проверка обработки дробного значения query-параметра <code>limit</code> при получении списка компаний</td>
+        <td>limit = дробное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.22</td>
-        <td>Проверка обработки строкового значения query-параметра <code>offset</code> при получении списка компаний</td>
+        <td>offset = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.23</td>
-        <td>Проверка обработки пустого значения query-параметра <code>offset</code> при получении списка компаний</td>
+        <td>offset = пустое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.24</td>
-        <td>Проверка обработки дробного значения query-параметра <code>offset</code> при получении списка компаний</td>
+        <td>offset = дробное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.25</td>
-        <td>Получение списка компаний с одновременным использованием query-параметров <code>status</code> и <code>limit</code></td>
+        <td>status + limit</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.26</td>
-        <td>Получение списка компаний с одновременным использованием query-параметров <code>status</code> и <code>offset</code></td>
+        <td>status + offset</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.27</td>
-        <td>Получение списка компаний с одновременным использованием query-параметров <code>limit</code> и <code>offset</code></td>
+        <td>limit + offset</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.28</td>
-        <td>Получение списка компаний с одновременным использованием query-параметров <code>status</code>, <code>limit</code> и <code>offset</code></td>
+        <td>status + limit + offset</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">1.29</td>
-        <td>Получение списка компаний при отправке запроса по HTTP-протоколу</td>
+        <td>HTTP вместо HTTPS</td>
         <td align="center">Pass</td>
     </tr>
 </table>
@@ -165,72 +165,72 @@
     </tr>
     <tr>
       <td align="center">2.1</td>
-      <td>Получение информации о существующей компании с заголовком <code>Accept-Language: EN</code></td>
+      <td>Accept-Language: EN</td>
       <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.2</td>
-        <td>Получение информации о существующей компании без заголовка <code>Accept-Language</code></td>
+        <td>Без заголовка Accept-Language</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.3</td>
-        <td>Проверка обработки несуществующего значения параметра пути <code>company_id</code> при получении информации о компании</td>
+        <td>Несуществующий company_id</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.4</td>
-        <td>Получение информации о компании с заголовком <code>Accept-Language: RU</code></td>
+        <td>Accept-Language: RU</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.5</td>
-        <td>Получение информации о компании с заголовком <code>Accept-Language: PL</code></td>
+        <td>Accept-Language: PL</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.6</td>
-        <td>Проверка обработки значения <code>company_id = 0</code> при получении информации о компании</td>
+        <td>company_id = 0</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.7</td>
-        <td>Проверка обработки отрицательного числового значения параметра пути <code>company_id</code> при получении информации о компании</td>
+        <td>company_id = отрицательное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.8</td>
-        <td>Проверка обработки строкового значения параметра пути <code>company_id</code> при получении информации о компании</td>
+        <td>company_id = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.9</td>
-        <td>Проверка обработки дробного значения параметра пути <code>company_id</code> при получении информации о компании</td>
+        <td>company_id = дробное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.10</td>
-        <td>Проверка обработки неподдерживаемого значения заголовка <code>Accept-Language</code> при получении информации о компании</td>
+        <td>Accept-Language = неподдерживаемое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.11</td>
-        <td>Проверка обработки пустого значения заголовка <code>Accept-Language</code> при получении информации о компании</td>
+        <td>Accept-Language = пустое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">2.12</td>
-        <td>Проверка обработки нескольких поддерживаемых значений заголовка <code>Accept-Language</code> при получении информации о компании</td>
+        <td>Accept-Language = несколько значений</td>
         <td align="center">Needs clarification</td>
     </tr>
     <tr>
         <td align="center">2.13</td>
-        <td>Проверка обработки поддерживаемого значения заголовка <code>Accept-Language</code> в нижнем регистре при получении информации о компании</td>
+        <td>Accept-Language в нижнем регистре</td>
         <td align="center">Needs clarification</td>
     </tr>
     <tr>
         <td align="center">2.14</td>
-        <td>Проверка отсутствия изменения состояния при повторном GET-запросе с одинаковыми параметрами при получении информации о компании</td>
+        <td>Идемпотентность повторного GET</td>
         <td align="center">Pass</td>
     </tr>
 </table>
@@ -245,77 +245,77 @@
     </tr>
     <tr>
       <td align="center">3.1</td>
-      <td>Получение списка пользователей без query-параметров</td>
+      <td>Без query-параметров</td>
       <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.2</td>
-        <td>Получение списка пользователей с корректным значением query-параметра <code>limit</code></td>
+        <td>limit = корректное значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.3</td>
-        <td>Получение списка пользователей с минимально допустимым значением query-параметра <code>limit</code></td>
+        <td>limit = минимально допустимое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.4</td>
-        <td>Проверка обработки значения <code>limit = 0</code> при получении списка пользователей</td>
+        <td>limit = 0</td>
         <td align="center">Fail</td>
     </tr>
     <tr>
         <td align="center">3.5</td>
-        <td>Проверка обработки отрицательного числового значения query-параметра <code>limit</code> при получении списка пользователей</td>
+        <td>limit = отрицательное число</td>
         <td align="center">Fail</td>
     </tr>
     <tr>
         <td align="center">3.6</td>
-        <td>Получение списка пользователей с корректным значением query-параметра <code>offset</code></td>
+        <td>offset = корректное значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.7</td>
-        <td>Получение списка пользователей при значении <code>offset</code>, равном или превышающем <code>total</code></td>
+        <td>offset ≥ total</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.8</td>
-        <td>Проверка обработки отрицательного числового значения query-параметра <code>offset</code> при получении списка пользователей</td>
+        <td>offset = отрицательное число</td>
         <td align="center">Needs clarification</td>
     </tr>
     <tr>
         <td align="center">3.9</td>
-        <td>Проверка обработки строкового значения query-параметра <code>limit</code> при получении списка пользователей</td>
+        <td>limit = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.10</td>
-        <td>Проверка обработки пустого значения query-параметра <code>limit</code> при получении списка пользователей</td>
+        <td>limit = пустое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.11</td>
-        <td>Проверка обработки дробного значения query-параметра <code>limit</code> при получении списка пользователей</td>
+        <td>limit = дробное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.12</td>
-        <td>Проверка обработки строкового значения query-параметра <code>offset</code> при получении списка пользователей</td>
+        <td>offset = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.13</td>
-        <td>Проверка обработки пустого значения query-параметра <code>offset</code> при получении списка пользователей</td>
+        <td>offset = пустое значение</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">3.14</td>
-        <td>Проверка обработки дробного значения query-параметра <code>offset</code> при получении списка пользователей</td>
+        <td>offset = дробное число</td>
         <td align="center">Pass</td>
     </tr>
       <tr>
         <td align="center">3.15</td>
-        <td>Получение списка пользователей с одновременным использованием query-параметров <code>limit</code> и <code>offset</code></td>
+        <td>limit + offset</td>
         <td align="center">Pass</td>
     </tr>
 </table>
@@ -330,37 +330,37 @@
     </tr>
     <tr>
       <td align="center">4.1</td>
-      <td>Получение информации о существующем пользователе по <code>user_id</code></td>
+      <td>Существующий user_id</td>
       <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">4.2</td>
-        <td>Проверка обработки несуществующего значения параметра пути <code>user_id</code> при получении информации о пользователе</td>
+        <td>Несуществующий user_id</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">4.3</td>
-        <td>Проверка обработки значения <code>user_id = 0</code> при получении информации о пользователе</td>
+        <td>user_id = 0</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">4.4</td>
-        <td>Проверка обработки отрицательного числового значения параметра пути <code>user_id</code> при получении информации о пользователе</td>
+        <td>user_id = отрицательное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">4.5</td>
-        <td>Проверка обработки строкового значения параметра пути <code>user_id</code> при получении информации о пользователе</td>
+        <td>user_id = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">4.6</td>
-        <td>Проверка обработки дробного значения параметра пути <code>user_id</code> при получении информации о пользователе</td>
+        <td>user_id = дробное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">4.7</td>
-        <td>Проверка отсутствия изменения состояния при повторном GET-запросе с одинаковым <code>user_id</code> при получении информации о пользователе</td>
+        <td>Идемпотентность повторного GET</td>
         <td align="center">Pass</td>
     </tr>
 </table>
@@ -375,107 +375,107 @@
     </tr>
     <tr>
       <td align="center">5.1</td>
-      <td>Создание пользователя с валидными значениями всех полей</td>
+      <td>Валидные значения всех полей в теле запроса</td>
       <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.2</td>
-        <td>Создание пользователя со значением <code>first_name = null</code></td>
+        <td>first_name = null</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.3</td>
-        <td>Проверка обработки значения <code>last_name = null</code> при создании пользователя</td>
+        <td>last_name = null</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.4</td>
-        <td>Создание пользователя со значением <code>company_id = null</code></td>
+        <td>company_id = null</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.5</td>
-        <td>Проверка обработки запроса без обязательного поля <code>last_name</code> при создании пользователя</td>
+        <td>Без обязательного поля last_name</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.6</td>
-        <td>Проверка обработки попытки создания пользователя с привязкой к компании со статусом <code>CLOSED</code></td>
+        <td>Компания со статусом CLOSED</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.7</td>
-        <td>Проверка обработки попытки создания пользователя с привязкой к компании со статусом <code>BANKRUPT</code></td>
+        <td>Компания со статусом BANKRUPT</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.8</td>
-        <td>Проверка обработки несуществующего значения поля <code>company_id</code> при создании пользователя</td>
+        <td>Несуществующий company_id</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.9</td>
-        <td>Проверка обработки попытки создания пользователя без тела запроса</td>
+        <td>Без тела запроса</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.10</td>
-        <td>Создание двух пользователей с идентичными данными</td>
+        <td>Два пользователя с одинаковыми данными</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.11</td>
-        <td>Создание пользователя без необязательных полей <code>first_name</code> и <code>company_id</code></td>
+        <td>Без необязательных полей (first_name, company_id)</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.12</td>
-        <td>Проверка обработки значения <code>company_id = 0</code> при создании пользователя</td>
+        <td>company_id = 0</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.13</td>
-        <td>Проверка обработки отрицательного числового значения поля <code>company_id</code> при создании пользователя</td>
+        <td>company_id = отрицательное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.14</td>
-        <td>Проверка обработки строкового значения поля <code>company_id</code> при создании пользователя</td>
+        <td>company_id = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.15</td>
-        <td>Проверка обработки дробного значения поля <code>company_id</code> при создании пользователя</td>
+        <td>company_id = дробное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.16</td>
-        <td>Проверка обработки числового значения поля <code>first_name</code> при создании пользователя</td>
+        <td>first_name = число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.17</td>
-        <td>Проверка обработки числового значения поля <code>last_name</code> при создании пользователя</td>
+        <td>last_name = число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.18</td>
-        <td>Проверка обработки невалидного JSON в теле запроса при создании пользователя</td>
+        <td>Невалидный JSON в теле запроса</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.19</td>
-        <td>Проверка обработки запроса с заголовком <code>Content-Type: application/xml</code> при создании пользователя</td>
+        <td>Content-Type: application/xml</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">5.20</td>
-        <td>Проверка обработки запроса без заголовка <code>Content-Type</code> при создании пользователя</td>
+        <td>Без заголовка Content-Type</td>
         <td align="center">Needs clarification</td>
     </tr>
     <tr>
         <td align="center">5.21</td>
-        <td>Проверка обработки дополнительного поля в теле запроса при создании пользователя</td>
+        <td>Дополнительное поле в теле запроса</td>
         <td align="center">Pass</td>
     </tr>
 </table>
@@ -490,132 +490,132 @@
     </tr>
     <tr>
       <td align="center">6.1</td>
-      <td>Обновление пользователя с валидными значениями всех полей</td>
+      <td>Валидные значения всех полей в теле запроса</td>
       <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.2</td>
-        <td>Обновление пользователя со значением <code>first_name = null</code></td>
+        <td>first_name = null</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.3</td>
-        <td>Обновление пользователя со значением <code>company_id = null</code></td>
+        <td>company_id = null</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.4</td>
-        <td>Проверка обработки значения <code>last_name = null</code> при обновлении пользователя</td>
+        <td>last_name = null</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.5</td>
-        <td>Проверка обработки попытки обновления пользователя с привязкой к компании со статусом <code>CLOSED</code></td>
+        <td>Компания со статусом CLOSED</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.6</td>
-        <td>Проверка обработки попытки обновления пользователя с привязкой к компании со статусом <code>BANKRUPT</code></td>
+        <td>Компания со статусом BANKRUPT</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.7</td>
-        <td>Проверка обработки попытки обновления несуществующего пользователя</td>
+        <td>Несуществующий user_id</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.8</td>
-        <td>Проверка обработки попытки обновления пользователя с несуществующим значением <code>company_id</code></td>
+        <td>Несуществующий company_id</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.9</td>
-        <td>Проверка обработки запроса на обновление без обязательного поля <code>last_name</code></td>
+        <td>Без обязательного поля last_name</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.10</td>
-        <td>Проверка обработки запроса на обновление пользователя без тела запроса</td>
+        <td>Без тела запроса</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.11</td>
-        <td>Проверка идемпотентности повторного PUT-запроса с одинаковым телом запроса</td>
+        <td>Идемпотентность повторного PUT</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.12</td>
-        <td>Проверка обработки строкового значения параметра пути <code>user_id</code> при обновлении пользователя</td>
+        <td>user_id = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.13</td>
-        <td>Обновление пользователя без необязательных полей <code>first_name</code> и <code>company_id</code></td>
+        <td>Без необязательных полей (first_name, company_id)</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.14</td>
-        <td>Проверка обработки числового значения поля <code>first_name</code> при обновлении пользователя</td>
+        <td>first_name = число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.15</td>
-        <td>Проверка обработки числового значения поля <code>last_name</code> при обновлении пользователя</td>
+        <td>last_name = число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.16</td>
-        <td>Проверка обработки значения <code>user_id = 0</code> при обновлении пользователя</td>
+        <td>user_id = 0</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.17</td>
-        <td>Проверка обработки отрицательного числового значения параметра пути <code>user_id</code> при обновлении пользователя</td>
+        <td>user_id = отрицательное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.18</td>
-        <td>Проверка обработки дробного значения параметра пути <code>user_id</code> при обновлении пользователя</td>
+        <td>user_id = дробное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.19</td>
-        <td>Проверка обработки значения <code>company_id = 0</code> при обновлении пользователя</td>
+        <td>company_id = 0</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.20</td>
-        <td>Проверка обработки отрицательного числового значения поля <code>company_id</code> при обновлении пользователя</td>
+        <td>company_id = отрицательное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.21</td>
-        <td>Проверка обработки строкового значения поля <code>company_id</code> при обновлении пользователя</td>
+        <td>company_id = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.22</td>
-        <td>Проверка обработки дробного значения поля <code>company_id</code> при обновлении пользователя</td>
+        <td>company_id = дробное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.23</td>
-        <td>Проверка обработки запроса на обновление без заголовка <code>Content-Type</code></td>
+        <td>Без заголовка Content-Type</td>
         <td align="center">Needs clarification</td>
     </tr>
     <tr>
         <td align="center">6.24</td>
-        <td>Проверка обработки запроса на обновление с заголовком <code>Content-Type: application/xml</code></td>
+        <td>Content-Type: application/xml</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.25</td>
-        <td>Проверка обработки невалидного JSON в теле запроса при обновлении пользователя</td>
+        <td>Невалидный JSON в теле запроса</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">6.26</td>
-        <td>Проверка обработки дополнительного поля в теле запроса при обновлении пользователя</td>
+        <td>Дополнительное поле в теле запроса</td>
         <td align="center">Pass</td>
     </tr>
 </table>
@@ -630,37 +630,37 @@
     </tr>
     <tr>
       <td align="center">7.1</td>
-      <td>Удаление существующего пользователя по <code>user_id</code></td>
+      <td>Удаление существующего пользователя</td>
       <td align="center">Fail</td>
     </tr>
     <tr>
         <td align="center">7.2</td>
         <td>Проверка повторного удаления ранее удалённого пользователя</td>
-        <td align="center">Fail</td>
+        <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">7.3</td>
-        <td>Проверка удаления пользователя с несуществующим значением <code>user_id</code></td>
+        <td>Несуществующий user_id</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">7.4</td>
-        <td>Проверка обработки строкового значения параметра пути <code>user_id</code> при удалении пользователя</td>
+        <td>user_id = строка</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">7.5</td>
-        <td>Проверка обработки значения <code>user_id = 0</code> при удалении пользователя</td>
+        <td>user_id = 0</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">7.6</td>
-        <td>Проверка обработки отрицательного числового значения параметра пути <code>user_id</code> при удалении пользователя</td>
+        <td>user_id = отрицательное число</td>
         <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">7.7</td>
-        <td>Проверка обработки дробного значения параметра пути <code>user_id</code> при удалении пользователя</td>
+        <td>user_id = дробное число</td>
         <td align="center">Pass</td>
     </tr>
 </table>
@@ -674,12 +674,12 @@
     </tr>
     <tr>
       <td align="center">8.1</td>
-      <td>Проверка полного жизненного цикла пользователя: создание, получение, обновление с привязкой к другой активной компании, повторное получение, удаление и проверка недоступности</td>
+      <td>Полный цикл: create → get → update (другая компания) → get → delete → 404</td>
       <td align="center">Pass</td>
     </tr>
     <tr>
         <td align="center">8.2</td>
-        <td>Проверка появления пользователя в списке после создания и отсутствия в списке после удаления</td>
+        <td>Пользователь в списке: появляется после create, исчезает после delete</td>
         <td align="center">Pass</td>
     </tr>
 </table>
